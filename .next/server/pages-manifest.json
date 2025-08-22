@@ -3,7 +3,8 @@
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/": "pages/index.js",
-  "/management": "pages/management.js",
+  "/library": "pages/library.js",
   "/search": "pages/search.js",
-  "/library": "pages/library.js"
+  "/management": "pages/management.js",
+  "/login": "pages/login.js"
 }

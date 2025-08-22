@@ -98,6 +98,16 @@ export const books = [
     description: "우주에 대한 경이로운 탐험",
     rating: 4.8,
     readCount: 8760
+  },
+  {
+    id: 12,
+    title: "커피 쿠폰의 숨겨진 비밀",
+    author: "김작가",
+    category: "추리소설",
+    description: "작은 커피숍에서 시작된 미스터리한 이야기. 평범해 보이는 쿠폰 뒤에 숨겨진 놀라운 비밀을 파헤치는 흥미진진한 추리소설.",
+    rating: 4.2,
+    readCount: 5430,
+    pdfFile: "/books/coffee-coupon-secret.pdf"
   }
 ];
 

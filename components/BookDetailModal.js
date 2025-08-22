@@ -58,6 +58,16 @@ export default function BookDetailModal({ book, isOpen, onClose }) {
     }
   };
 
+  // 읽기 버튼 클릭 핸들러
+  const handleReadBook = () => {
+    if (book.pdfFile) {
+      // 새 창에서 PDF 파일 열기
+      window.open(book.pdfFile, '_blank');
+    } else {
+      alert('이 책의 PDF 파일이 준비되지 않았습니다.');
+    }
+  };
+
   if (!isOpen || !book) return null;
 
   return (
@@ -111,7 +121,7 @@ export default function BookDetailModal({ book, isOpen, onClose }) {
                 <span className="like-count">({likeCount})</span>
               </button>
               
-              <button className="read-button">
+              <button className="read-button" onClick={handleReadBook}>
                 📖 읽기
               </button>
             </div>
